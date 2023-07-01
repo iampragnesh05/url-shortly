@@ -62,6 +62,9 @@ body {
   .signup-btn {
     font-weight: 600;
   }
+  .share-line{
+    display: none;
+  }
   
   .signup-btn{
     background-color: var(--color-primary-cyan);
@@ -599,7 +602,7 @@ body {
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
-    margin: 5px 6%;
+    margin: 5px 14%;
   }
   .section-heading{
     font-size: 24px;
