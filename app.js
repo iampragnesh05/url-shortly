@@ -38,7 +38,8 @@ function validateForm(event){
         dataType: "json",
         success: (link) => {
           console.log(`Long URL was ${link.destination}, short URL is ${link.shortUrl}`);
-          $("#section-text").text(share-line); // 
+         let shareLine = "Here's your short URL! 🚀 Copy it and share with your friends!";
+         $("#section-text").text(shareLine);
           $("#colored-text").text(link.shortUrl); 
           copyBtn.style.display = 'block'
         }
