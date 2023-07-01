@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="app.js"></script>
+</head>
+<body>
+
+  <div class="navbar-container">
+    <nav class="navbar navbar-expand-lg navbar-light m-3">
+      <a class="navbar-brand" class="p-3" href="#"><img src="images\logo.svg" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link p-2" href="#middle-section">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2" href="#pricing-section">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2" href="#boost-section">Resources</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav loginSign">
+          <li class="nav-item">
+            <a class="btn btn-outline-secondary m-2 login-btn" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success ml-2 signup-btn" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+<!-- Header  -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 text-partition">
+        <h2 class="banner-heading">More than just shorter links</h2>
+        <p class="banner-para">Build your brand's recognition and get detailed insights on how your links are performing.</p>
+        <a href="#" class="btn banner-button">Get Started</a>
+      </div>
+      <div class="col-sm-6 image-partition">
+        <img src="images\illustration-working.svg" alt="Image" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- Shortenthelink container  -->
+  <!-- <form class="shorten-url-form" onsubmit="validateForm(event)">
+    <input type="url" placeholder="Shorten a link here&hellip;" id="url-input" class="error"/>
+    <button type="submit" class="btn btn-primary">Shorten It!</button>
+    <p class="error-message text-below" id="error-message"><br>Please add a link</p>
+  </form> -->
+
+  <!-- Shortenthelink container -->
+<form class="shorten-url-form" onsubmit="validateForm(event)">
+  <input type="url" placeholder="Shorten a link here&hellip;" id="url-input" class="error" />
+  <button type="submit" class="btn btn-primary">Shorten It!</button>
+  <p class="error-message text-below" id="error-message"><br>Please add a link</p>
+</form>
+
+
+
+  <!-- Active Content  --> 
+  <!-- <div class="main-section">
+    <div class="section">
+      <p class="section-text" id="section-text"></p>
+      <div>
+        <p class="colored-text" id="colored-text"></p>
+        <button class="copy-button" id="copy-button"onclick="copyText(this)">Copy</button>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="main-section">
+    <div class="section" id="section">
+      <p class="section-text" id="section-text"></p>
+      <div class="mobile-content">
+        <p class="colored-text" id="colored-text"></p>
+        <button class="copy-button" id="copy-button" onclick="copyText(this)">Copy</button>
+      </div>
+    </div>
+  </div
+
+  <!-- Middle Section  -->
+
+  <section class="middle-section" id="middle-section">
+    <div class="advanced-container">
+      <h2 class="section-heading">Advanced Statistics</h2>
+      <p class="middle-section-text">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+  
+      <div class="card-container">
+        <div class="card card-1">
+           <div class="card-icon">
+            <img src="images\icon-brand-recognition.svg" alt="Icon" class="card-image">
+           </div>
+          <h3 class="card-heading">Brand Recognition</h3>
+          <p class="card-text">Boost your brand recognition with detailed insights on how your links are performing.</p>
+        </div>
+        <div class="card-line"></div>
+        <div class="card card-2">
+          <div class="card-icon">
+            <img src="images\icon-detailed-records.svg" alt="Icon" class="card-image">
+           </div>
+          <h3 class="card-heading">Detailed Records</h3>
+          <p class="card-text">Gain valuable insights into who is clicking your links and when, with detailed records.</p>
+        </div>
+        <div class="card-line card-line2"></div>
+        <div class="card card-3">
+          <div class="card-icon">
+            <img src="images\icon-fully-customizable.svg" alt="Icon" class="card-image">
+           </div>
+          <h3 class="card-heading">Customizable Reports</h3>
+          <p class="card-text">Create custom reports to analyze your link performance and optimize your marketing strategies.</p>
+        </div>
+    </div>
+   
+    </section>
+    <section class="boost-section" id="boost-section">
+      <h2 class="boost-heading">Boost your links today</h2>
+      <a href="#" class="get-started-btn">Get Started</a>
+    </section>    
+
+    <!-- Pricing -->
+
+    <section class="pricing-section" id="pricing-section">
+      <div class="pricing-container">
+        <div class="pricing-card">
+          <h3 class="pricing-title">Free</h3>
+          <p class="pricing-description">Perfect for getting started</p>
+          <div class="pricing-price">
+            <span class="pricing-currency">₹</span>
+            <span class="pricing-amount">0</span>
+            <span class="pricing-duration">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li>Unlimited Short URLs</li>
+            <li>Basic Analytics</li>
+            <li>Limited Customization</li>
+          </ul>
+          <a href="#" class="pricing-button">Get Started</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo">
+            <img src="images\logo.svg" alt="Logo">
+          </div>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#middle-section">Features</a></li>
+              <li><a href="#pricing-section">Pricing</a></li>
+              <li><a href="#boost-section">Resources</a></li>
+            </ul>
+          </nav>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Built by <a href="https://www.iampragnesh.com/">Pragnesh Shrimal.</a></p>
+        </div>
+      </div>
+    </footer>
+    
+    
+
+    
+
+  <!-- bootstrap Javascript -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
